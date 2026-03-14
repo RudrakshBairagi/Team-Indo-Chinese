@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import BottomNav from "@/components/BottomNav";
-import SearchBar from "@/components/SearchBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,7 +24,6 @@ export default function RootLayout({
       <body className={`${inter.className} bg-background-light font-sans text-city-black min-h-screen text-base antialiased`}>
         <div className="flex flex-col h-screen max-w-md mx-auto bg-background-light shadow-2xl overflow-hidden relative">
           <Header />
-          <SearchBar />
           {children}
           <BottomNav />
         </div>

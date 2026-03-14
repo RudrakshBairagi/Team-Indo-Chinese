@@ -144,7 +144,7 @@ export default function Home() {
             <section className="mt-8" data-purpose="redeem-section">
                 <div className="px-6 mb-4 flex justify-between items-center">
                     <h2 className="text-2xl font-bold">Redeem Coins</h2>
-                    <Link className="text-city-purple text-xs font-bold uppercase tracking-wider" href="#">See Rewards</Link>
+                    <Link className="text-city-purple text-xs font-bold uppercase tracking-wider" href="/redeem">See Rewards</Link>
                 </div>
                 <div className="overflow-x-auto hide-scrollbar flex gap-4 px-6 py-2" data-purpose="redeem-scroll">
                     {/* Redeem 1: Coffee Discount */}
