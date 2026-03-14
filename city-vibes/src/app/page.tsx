@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Home() {
     return (
-        <main className="flex-1 overflow-y-auto w-full pb-32">
+        <main className="flex-1 overflow-y-auto w-full pb-32 pt-[88px]">
             {/* BEGIN: Stories Section */}
             <section className="mt-8" data-purpose="stories-section">
                 <div className="px-6 flex justify-between items-end mb-4">

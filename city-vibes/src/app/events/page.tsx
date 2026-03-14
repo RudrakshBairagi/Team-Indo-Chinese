@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Events() {
     return (
-        <main className="flex-1 overflow-y-auto w-full pb-32">
+        <main className="flex-1 overflow-y-auto w-full pb-32 pt-[88px]">
             {/* Filter Chips */}
             <div className="flex gap-2 px-6 py-4 overflow-x-auto hide-scrollbar">
                 <button className="flex shrink-0 items-center justify-center rounded-full bg-city-purple text-white px-4 py-1.5 text-sm font-bold">

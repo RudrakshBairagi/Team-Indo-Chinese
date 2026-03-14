@@ -3,7 +3,7 @@ import SearchBar from '@/components/SearchBar';
 
 export default function RedeemPage() {
     return (
-        <main className="flex-1 overflow-y-auto w-full pb-32">
+        <main className="flex-1 overflow-y-auto w-full pb-32 pt-[88px]">
             {/* Points Balance Section */}
             <section className="px-6 py-8">
                 <div className="bg-gradient-to-br from-city-purple to-[#8B5CF6] rounded-3xl p-6 shadow-xl relative overflow-hidden">

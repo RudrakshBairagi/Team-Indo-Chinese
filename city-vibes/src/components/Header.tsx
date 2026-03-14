@@ -1,6 +1,48 @@
+'use client';
+
+import { useState, useEffect, useRef } from 'react';
+import { usePathname } from 'next/navigation';
+
 export default function Header() {
+    const [isVisible, setIsVisible] = useState(true);
+    const lastScrollY = useRef(0);
+    const pathname = usePathname();
+
+    // Reset visibility when navigating to a new page
+    useEffect(() => {
+        setIsVisible(true);
+        lastScrollY.current = 0;
+    }, [pathname]);
+
+    useEffect(() => {
+        const handleScroll = (e: Event) => {
+            // Only respond to scroll events from a <main> element
+            const target = e.target as HTMLElement;
+            if (target.tagName !== 'MAIN') return;
+
+            const currentScrollY = target.scrollTop;
+            
+            if (currentScrollY > lastScrollY.current && currentScrollY > 50) {
+                setIsVisible(false);
+            } else {
+                setIsVisible(true);
+            }
+            
+            lastScrollY.current = currentScrollY;
+        };
+
+        // Use capture phase to catch scroll events from any descendant (including main)
+        document.addEventListener('scroll', handleScroll, { capture: true, passive: true });
+
+        return () => {
+            document.removeEventListener('scroll', handleScroll, { capture: true } as EventListenerOptions);
+        };
+    }, []);
+
     return (
-        <header className="pt-12 px-6 pb-2 flex justify-between items-start bg-transparent sticky top-0 z-20 shrink-0">
+        <header className={`pt-12 px-6 pb-2 flex justify-between items-start bg-background-light/80 backdrop-blur-md absolute top-0 left-0 right-0 z-20 transition-transform duration-300 ${
+            isVisible ? 'translate-y-0' : '-translate-y-full'
+        }`}>
             <div className="flex flex-col cursor-pointer">
                 <div className="flex items-center gap-1.5">
                     <span className="font-semibold text-[22px] tracking-tight text-[#161616]">San Francisco, CA</span>

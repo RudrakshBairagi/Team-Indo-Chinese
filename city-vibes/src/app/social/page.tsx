@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function SocialPage() {
     return (
-        <main className="flex-1 overflow-y-auto w-full pb-32">
+        <main className="flex-1 overflow-y-auto w-full pb-32 pt-[88px]">
             {/* Stories Section */}
             <section className="mt-6" data-purpose="stories-section">
                 <div className="px-6 mb-4">
