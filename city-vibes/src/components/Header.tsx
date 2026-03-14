@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 
 export default function Header() {
     const [isVisible, setIsVisible] = useState(true);
@@ -58,14 +59,14 @@ export default function Header() {
                 <button aria-label="Notifications" className="p-0 mt-0.5">
                     <span className="material-symbols-outlined text-[32px] filled-icon text-[#161616]">notifications</span>
                 </button>
-                <div className="flex flex-col items-center gap-1">
-                    <button aria-label="Profile" className="p-0">
+                <Link href="/profile" className="flex flex-col items-center gap-1">
+                    <span aria-label="Profile" className="p-0">
                         <span className="material-symbols-outlined text-[32px] text-[#161616]" style={{ fontVariationSettings: "'wght' 300" }}>person</span>
-                    </button>
+                    </span>
                     <span className="bg-[#F6ECFF] text-[#B85DF8] text-[11px] font-bold px-3 py-0.5 rounded-full border border-[#E9D5FF] tracking-wide">
                         500 pts
                     </span>
-                </div>
+                </Link>
             </div>
         </header>
     );

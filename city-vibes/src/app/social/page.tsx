@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import SearchBar from '@/components/SearchBar';
 
 export default function SocialPage() {
     return (
@@ -9,10 +10,7 @@ export default function SocialPage() {
                     <h2 className="text-2xl font-extrabold tracking-tight">Social Feed</h2>
                 </div>
                 <div className="px-6 mb-6">
-                    <div className="relative flex items-center shadow-input-soft rounded-2xl bg-white">
-                        <span className="material-symbols-outlined absolute left-4 text-gray-400">search</span>
-                        <input className="w-full bg-transparent py-4 pl-12 pr-4 border-none focus:ring-0 text-sm font-medium text-city-black placeholder-gray-400 rounded-2xl" placeholder="Search for inspiration..." type="text"/>
-                    </div>
+                    <SearchBar placeholder="Search for inspiration..." className="" />
                 </div>
                 <div className="flex gap-4 px-6 overflow-x-auto hide-scrollbar pb-2">
                     <div className="flex flex-col items-center gap-2 min-w-[72px]">
