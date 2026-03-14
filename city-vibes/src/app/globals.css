@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --color-city-neon: #29FFB3;
+  --color-city-purple: #A855F7;
+  --color-city-black: #121212;
+  --color-city-gray: #F5F5F7;
+  --color-primary: #A855F7;
+  --color-background-light: rgb(255 251 227);
+
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Inter", sans-serif;
+
+  --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --shadow-subtle: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --shadow-card-soft: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --shadow-nav-soft: 0 10px 30px rgba(0, 0, 0, 0.15);
+  --shadow-input-soft: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+body {
+  background-color: var(--color-background-light);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.filled-icon {
+  font-variation-settings: 'FILL' 1;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hero-story-card {
+  min-width: 85%;
+  aspect-ratio: 0.9/1;
+  scroll-snap-align: center;
+}
+
+.category-tile {
+  min-width: 140px;
+  height: 160px;
+  scroll-snap-align: start;
+}
+
+.redeem-card {
+  min-width: 160px;
+  height: 200px;
+  scroll-snap-align: start;
+}
+
+.hero-container {
+  scroll-snap-type: x mandatory;
+}
+
+.art-title {
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+}
+
+.line-art-overlay {
+  background-image: url("data:image/svg+xml,%3Csvg width='400' height='400' viewBox='0 0 400 400' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 200C50 117.157 117.157 50 200 50C282.843 50 350 117.157 350 200C350 282.843 282.843 350 200 350C117.157 350 50 200Z' stroke='%2329FFB3' stroke-opacity='0.2' stroke-width='2'/%3E%3Cpath d='M100 200C100 144.772 144.772 100 200 100C255.228 100 300 144.772 300 200C300 255.228 255.228 300 200 300C144.772 300 100 200Z' stroke='%23A855F7' stroke-opacity='0.2' stroke-width='2'/%3E%3Ccircle cx='200' cy='200' r='10' fill='%23A855F7' fill-opacity='0.4'/%3E%3Cpath d='M200 50V0M200 400V350M50 200H0M400 200H350' stroke='white' stroke-opacity='0.1'/%3E%3C/svg%3E");
+  background-size: cover;
+}
