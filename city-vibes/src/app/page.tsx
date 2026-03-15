@@ -109,7 +109,7 @@ export default function Home() {
             </section>
             {/* END: Stories Section */}
             {/* BEGIN: Category Navigation */}
-            <section className="mt-4" data-purpose="category-section">
+            <section className="mt-0" data-purpose="category-section">
                 <div className="px-6 mb-0">
                     <h2 className="text-2xl font-bold">Volunteer For</h2>
                 </div>
@@ -173,7 +173,7 @@ export default function Home() {
             </section>
             {/* END: Category Navigation */}
             {/* BEGIN: Ranking Section */}
-            <section className="mt-8" data-purpose="ranking-section">
+            <section className="mt-2" data-purpose="ranking-section">
                 <div className="px-6 mb-0 flex justify-between items-center">
                     <h2 className="text-2xl font-bold">Ranking</h2>
                     <Link className="text-city-purple text-xs font-bold uppercase tracking-wider" href="/leaderboard">View Leaderboard</Link>
@@ -217,7 +217,7 @@ export default function Home() {
             </section>
             {/* END: Ranking Section */}
             {/* BEGIN: Redeem Coins Section */}
-            <section className="mt-8" data-purpose="redeem-section">
+            <section className="mt-2" data-purpose="redeem-section">
                 <div className="px-6 mb-0 flex justify-between items-center">
                     <h2 className="text-2xl font-bold">Redeem Coins</h2>
                     <Link className="text-city-purple text-xs font-bold uppercase tracking-wider" href="/redeem">See Rewards</Link>
@@ -275,7 +275,7 @@ export default function Home() {
             </section>
             {/* END: Redeem Coins Section */}
             {/* BEGIN: Upcoming Events */}
-            <section className="mt-8" data-purpose="events-section">
+            <section className="mt-2" data-purpose="events-section">
                 <div className="flex justify-between items-center mb-0 px-6">
                     <h2 className="text-2xl font-bold">Upcoming Events</h2>
                     <Link className="text-city-purple text-sm font-bold" href="/events">View all</Link>
@@ -355,7 +355,7 @@ export default function Home() {
             </section>
             {/* END: Upcoming Events */}
             {/* BEGIN: Top Organizations */}
-            <section className="mt-8 px-6 pb-8" data-purpose="organizations-section">
+            <section className="mt-4 px-6 pb-8" data-purpose="organizations-section">
                 <h2 className="text-2xl font-bold mb-6">Volunteer With -</h2>
                 <div className="grid grid-cols-1 gap-4">
                     {/* Organization Item 1 */}
