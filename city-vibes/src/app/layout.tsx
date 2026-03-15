@@ -23,8 +23,8 @@ export default function RootLayout({
       </head>
       <body className={`${inter.className} bg-background-light font-sans text-city-black min-h-screen text-base antialiased`}>
         <div className="flex flex-col h-screen max-w-md mx-auto bg-background-light shadow-2xl overflow-hidden relative">
-          {children}
           <Header />
+          {children}
           <BottomNav />
         </div>
       </body>
