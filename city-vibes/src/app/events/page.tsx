@@ -25,7 +25,7 @@ export default function Events() {
             {/* Scrollable Event List */}
             <div className="px-6 space-y-8 mt-2">
                 {/* Event Card 1 */}
-                <Link href="/events/hyrox-delhi" className="block bg-city-black rounded-[2.5rem] flex flex-col overflow-hidden shadow-soft border border-white/5 transition-transform active:scale-[0.98]">
+                <Link href="/events/hyrox-delhi" className="block bg-city-black rounded-[2.5rem] flex flex-col overflow-hidden shadow-card-soft border border-white/5 transition-transform active:scale-[0.98]">
                     <div className="h-56 relative bg-white overflow-hidden">
                         <div className="absolute top-4 right-4 w-8 h-8 bg-city-black flex items-center justify-center rotate-12 border-2 border-white/20">
                             <svg className="w-4 h-4 text-city-neon" fill="currentColor" viewBox="0 0 24 24">
@@ -51,7 +51,7 @@ export default function Events() {
                     </div>
                 </Link>
                 {/* Event Card 2 */}
-                <Link href="/events/hyrox-delhi" className="block bg-city-black rounded-[2.5rem] flex flex-col overflow-hidden shadow-soft border border-white/5 transition-transform active:scale-[0.98]">
+                <Link href="/events/hyrox-delhi" className="block bg-city-black rounded-[2.5rem] flex flex-col overflow-hidden shadow-card-soft border border-white/5 transition-transform active:scale-[0.98]">
                     <div className="h-56 relative bg-white overflow-hidden">
                         <div className="absolute top-4 right-4 w-8 h-8 bg-city-black flex items-center justify-center rotate-12 border-2 border-white/20">
                             <svg className="w-4 h-4 text-city-neon" fill="currentColor" viewBox="0 0 24 24">
@@ -77,7 +77,7 @@ export default function Events() {
                     </div>
                 </Link>
                 {/* Event Card 3 */}
-                <Link href="/events/hyrox-delhi" className="block bg-white border border-gray-100 rounded-[2.5rem] flex flex-col overflow-hidden shadow-soft transition-transform active:scale-[0.98]">
+                <Link href="/events/hyrox-delhi" className="block bg-white border border-gray-100 rounded-[2.5rem] flex flex-col overflow-hidden shadow-card-soft transition-transform active:scale-[0.98]">
                     <div className="h-56 relative bg-white overflow-hidden">
                         <div className="absolute top-6 left-6 bg-white border border-gray-100 p-2 rounded-xl shadow-sm">
                             <span className="text-city-black text-[10px] font-bold uppercase tracking-widest">Arts &amp; Culture</span>

@@ -19,7 +19,7 @@ export default function Leaderboard() {
             </div>
 
             {/* Ranking Tiers Summary Section */}
-            <div className="mb-10 overflow-x-auto hide-scrollbar -mx-6 px-6">
+            <div className="mb-10 overflow-x-auto hide-scrollbar -mx-6 px-6 py-4">
                 <h2 className="text-[11px] font-black text-city-purple uppercase tracking-[0.2em] px-1 mb-4">Ranking Tiers</h2>
                 <div className="flex gap-4 min-w-max px-1">
                     {/* Rookie Tier */}

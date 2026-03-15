@@ -15,8 +15,8 @@
   --font-display: "Inter", sans-serif;
 
   --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.12);
-  --shadow-subtle: 0 8px 24px rgba(0, 0, 0, 0.12);
-  --shadow-card-soft: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --shadow-subtle: 0 4px 12px rgba(0, 0, 0, 0.08); /* Making subtle actually subtle */
+  --shadow-card-soft: 0 12px 32px rgba(0, 0, 0, 0.15); /* Slightly stronger for cards */
   --shadow-nav-soft: 0 10px 30px rgba(0, 0, 0, 0.15);
   --shadow-input-soft: 0 8px 24px rgba(0, 0, 0, 0.08);
 }

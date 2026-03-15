@@ -30,7 +30,7 @@ export default function Home() {
             <SearchBar />
             {/* BEGIN: Stories Section */}
             <section className="mt-8" data-purpose="stories-section">
-                <div className="px-6 flex justify-between items-end mb-4">
+                <div className="px-6 flex justify-between items-end mb-0">
                     <h2 className="text-2xl font-extrabold tracking-tight">What you missed!</h2>
                     <div className="flex gap-1.5 items-center">
                         {Array.from({ length: totalStories }).map((_, i) => (
@@ -46,7 +46,7 @@ export default function Home() {
                     </div>
                 </div>
                 {/* Horizontal Scrollable Hero Area */}
-                <div ref={storyContainerRef} className="hero-container flex gap-4 overflow-x-auto px-6 pb-6 hide-scrollbar snap-x snap-mandatory">
+                <div ref={storyContainerRef} className="hero-container flex gap-4 overflow-x-auto px-6 pt-12 pb-14 -mt-10 hide-scrollbar snap-x snap-mandatory">
                     {/* Hero Story 1: Art District */}
                     <div
                         className="hero-story-card bg-city-black rounded-[2.5rem] flex flex-col relative overflow-hidden shrink-0 shadow-card-soft border border-white/5 snap-start">
@@ -110,10 +110,10 @@ export default function Home() {
             {/* END: Stories Section */}
             {/* BEGIN: Category Navigation */}
             <section className="mt-4" data-purpose="category-section">
-                <div className="px-6 mb-4">
+                <div className="px-6 mb-0">
                     <h2 className="text-2xl font-bold">Volunteer For</h2>
                 </div>
-                <div className="overflow-x-auto hide-scrollbar flex gap-4 px-6 py-2" data-purpose="category-scroll">
+                <div className="overflow-x-auto hide-scrollbar flex gap-4 px-6 pt-10 pb-14 -mt-8" data-purpose="category-scroll">
                     {/* Tile 1: Events and Festivals */}
                     <button
                         className="category-tile relative group bg-city-black rounded-[2rem] overflow-hidden shrink-0 transition-transform active:scale-95 shadow-card-soft border border-white/5">
@@ -174,17 +174,17 @@ export default function Home() {
             {/* END: Category Navigation */}
             {/* BEGIN: Ranking Section */}
             <section className="mt-8" data-purpose="ranking-section">
-                <div className="px-6 mb-4 flex justify-between items-center">
+                <div className="px-6 mb-0 flex justify-between items-center">
                     <h2 className="text-2xl font-bold">Ranking</h2>
                     <Link className="text-city-purple text-xs font-bold uppercase tracking-wider" href="/leaderboard">View Leaderboard</Link>
                 </div>
-                <div className="overflow-x-auto hide-scrollbar flex gap-4 px-6 py-2" data-purpose="ranking-scroll">
+                <div className="overflow-x-auto hide-scrollbar flex gap-4 px-6 pt-10 pb-14 -mt-8 items-end snap-x snap-mandatory" data-purpose="ranking-scroll">
                     {/* Rank 1 Card */}
                     <div className="rank-card bg-white rounded-[2rem] p-4 shrink-0 shadow-card-soft border border-black/5 flex flex-col items-center text-center relative overflow-hidden">
                         <div className="absolute -top-6 -right-6 w-16 h-16 bg-city-neon/10 rounded-full"></div>
                         <div className="relative mb-3">
                             <div className="w-16 h-16 rounded-2xl bg-city-black overflow-hidden border-2 border-city-neon">
-                                <img alt="User" className="w-full h-full object-cover opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzvI0uxK6imWqBXSKikpuvDexsc_Ym2PcG-YkAGIhn4RT2WhbJ68mjrrfxP6vx9KckG6KyQsCdyD_v_4T09_kjDDtPsku8wzXadB-m-Z2-86mTK_cH4bWVFRU4i1eGX1CyJYBCjSUFBn_fMR8wDXJH7UOT_BS2SbWxI0ubeDvT9rtSFr83f9IDlcPFGlXy7ShLKIV_Ypvn_PEwJuOT8cZmNthsWGSAe7ybjULxjgQTFBHsMEfoSmBu05HjOfoTZJmuR2lUx1q40KM" />
+                                <img alt="User" className="w-full h-full object-cover opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzvI0uxK6imWqBXSKikpuvDexsc_Ym2PcG-YkAGIhn4RT2WhbJ68mjrrfxP6vx9KckG6KyQsCdyD_v_4T09_kjDDtPsku8wzXadB-m-Z2-86mTK_cH4bWVFRU4i1eGX1CyJYBCnSUFBn_fMR8wDXJH7UOT_BS2SbWxI0ubeDvT9rtSFr83f9IDlcPFGlXy7ShLKIV_Ypvn_PEwJuOT8cZmNthsWGSAe7ybjULxjgQTFBHsMEfoSmBu05HjOfoTZJmuR2lUx1q40KM" />
                             </div>
                             <div className="absolute -bottom-1 -right-1 bg-city-neon text-city-black font-black text-[10px] w-5 h-5 flex items-center justify-center rounded-lg shadow-sm">1</div>
                         </div>
@@ -218,11 +218,11 @@ export default function Home() {
             {/* END: Ranking Section */}
             {/* BEGIN: Redeem Coins Section */}
             <section className="mt-8" data-purpose="redeem-section">
-                <div className="px-6 mb-4 flex justify-between items-center">
+                <div className="px-6 mb-0 flex justify-between items-center">
                     <h2 className="text-2xl font-bold">Redeem Coins</h2>
                     <Link className="text-city-purple text-xs font-bold uppercase tracking-wider" href="/redeem">See Rewards</Link>
                 </div>
-                <div className="overflow-x-auto hide-scrollbar flex gap-4 px-6 py-2" data-purpose="redeem-scroll">
+                <div className="overflow-x-auto hide-scrollbar flex gap-4 px-6 pt-10 pb-14 -mt-8" data-purpose="redeem-scroll">
                     {/* Redeem 1: Coffee Discount */}
                     <div
                         className="redeem-card relative bg-white rounded-[2rem] p-5 shrink-0 shadow-card-soft border border-black/5 flex flex-col justify-between overflow-hidden">
@@ -276,12 +276,12 @@ export default function Home() {
             {/* END: Redeem Coins Section */}
             {/* BEGIN: Upcoming Events */}
             <section className="mt-8" data-purpose="events-section">
-                <div className="flex justify-between items-center mb-4 px-6">
+                <div className="flex justify-between items-center mb-0 px-6">
                     <h2 className="text-2xl font-bold">Upcoming Events</h2>
                     <Link className="text-city-purple text-sm font-bold" href="/events">View all</Link>
                 </div>
                 {/* Horizontal Scrollable Container */}
-                <div className="hero-container flex gap-4 overflow-x-auto px-6 pb-6 hide-scrollbar">
+                <div className="hero-container flex gap-4 overflow-x-auto px-6 pt-10 pb-14 -mt-8 hide-scrollbar">
                     {/* Event Card 1: Summer Rave */}
                     <div className="hero-story-card bg-white rounded-[2.5rem] flex flex-col relative overflow-hidden shrink-0 shadow-card-soft border border-black/5"
                         data-purpose="event-card">
