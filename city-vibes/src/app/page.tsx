@@ -271,20 +271,15 @@ export default function Home() {
                 </div>
                 {/* Horizontal Scrollable Container */}
                 <div className="hero-container flex gap-4 overflow-x-auto px-6 pt-10 pb-14 -mt-8 hide-scrollbar">
-                    {/* Event Card 1: Summer Rave */}
+                    {/* Event Card 1: Goonj Senior Citizen Volunteering */}
                     <div className="hero-story-card bg-white rounded-[2.5rem] flex flex-col relative overflow-hidden shrink-0 shadow-card-soft border border-black/5"
                         data-purpose="event-card">
-                        {/* Top Half: Illustration */}
+                        {/* Top Half: Image */}
                         <div className="flex-1 bg-white relative overflow-hidden">
-                            <div className="absolute inset-0 line-art-overlay opacity-40"></div>
-                            <div
-                                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 border-[2px] border-black rounded-full">
-                            </div>
-                            <div
-                                className="absolute top-[30%] right-[15%] w-20 h-20 bg-city-neon rounded-full border-2 border-black shadow-lg">
-                            </div>
+                            <img src="/events/Goonj.webp" alt="Goonj Senior Citizen Volunteering" className="absolute inset-0 w-full h-full object-cover" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
                             <div className="absolute bottom-4 left-6 bg-city-black text-city-neon font-black text-[10px] px-3 py-1.5 rounded-full uppercase tracking-widest z-30">
-                                SUMMER RAVE
+                                VOLUNTEERING
                             </div>
                             {/* Points Badge */}
                             <div className="absolute top-6 right-6 bg-city-purple/10 text-city-purple font-bold text-[11px] px-4 py-2 rounded-full border border-city-purple/5 z-30">
@@ -294,9 +289,9 @@ export default function Home() {
                         {/* Bottom Half: Dark */}
                         <div className="bg-city-black p-5 sm:p-6 flex flex-col justify-between relative z-20 shrink-0">
                             <div>
-                                <h3 className="text-white text-xl font-bold">Summer Rave 2024</h3>
-                                <p className="text-gray-400 text-[11px] font-medium mt-1">Saturday, July 15th • 10 PM</p>
-                                <p className="text-gray-400 text-[11px] font-medium mt-0.5">Location: Hauz Khas Village, Delhi</p>
+                                <h3 className="text-white text-xl font-bold">Goonj Senior Citizen Volunteering</h3>
+                                <p className="text-gray-400 text-[11px] font-medium mt-1">Sunday, March 15th • 10 AM</p>
+                                <p className="text-gray-400 text-[11px] font-medium mt-0.5">Location: Rajiv Chowk, Delhi</p>
                             </div>
                             <div className="flex justify-between items-center">
                                 <button
@@ -307,17 +302,15 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    {/* Event Card 2: Modernist Exhibition */}
+                    {/* Event Card 2: Hyrox Delhi Volunteering */}
                     <div className="hero-story-card bg-white rounded-[2.5rem] flex flex-col relative overflow-hidden shrink-0 shadow-card-soft border border-black/5"
                         data-purpose="event-card">
-                        {/* Top Half: Illustration */}
+                        {/* Top Half: Image */}
                         <div className="flex-1 bg-white relative overflow-hidden">
-                            <div className="absolute inset-0 line-art-overlay opacity-40"></div>
-                            <div
-                                className="absolute top-[20%] left-[15%] w-24 h-24 bg-city-purple rounded-[2rem] border-2 border-black rotate-12">
-                            </div>
+                            <img src="/events/Hyrox_Delhi.jpeg" alt="Hyrox Delhi Volunteering" className="absolute inset-0 w-full h-full object-cover" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
                             <div className="absolute bottom-4 left-6 bg-city-black text-city-neon font-black text-[10px] px-3 py-1.5 rounded-full uppercase tracking-widest z-30">
-                                EXHIBITION
+                                FITNESS
                             </div>
                             {/* Points Badge */}
                             <div className="absolute top-6 right-6 bg-city-purple/10 text-city-purple font-bold text-[11px] px-4 py-2 rounded-full border border-city-purple/5 z-30">
@@ -327,8 +320,8 @@ export default function Home() {
                         {/* Bottom Half: Dark */}
                         <div className="bg-city-black p-5 sm:p-6 flex flex-col justify-between relative z-20 shrink-0">
                             <div>
-                                <h3 className="text-white text-xl font-bold">Modernist Exhibition</h3>
-                                <p className="text-gray-400 text-[11px] font-medium mt-1">Starts Aug 12th • 10 AM</p>
+                                <h3 className="text-white text-xl font-bold">Hyrox Delhi Volunteering</h3>
+                                <p className="text-gray-400 text-[11px] font-medium mt-1">Saturday, March 22nd • 8 AM</p>
                                 <p className="text-gray-400 text-[11px] font-medium mt-0.5">Location: India Gate Lawns, Delhi</p>
                             </div>
                             <div className="flex justify-between items-center">
