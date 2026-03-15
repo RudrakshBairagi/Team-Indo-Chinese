@@ -9,6 +9,11 @@ export default function Header() {
     const lastScrollY = useRef(0);
     const pathname = usePathname();
 
+    // Hide header on event detail and leaderboard pages
+    const isEventDetailPage = pathname.startsWith('/events/');
+    const isLeaderboardPage = pathname === '/leaderboard';
+    const hideHeader = isEventDetailPage || isLeaderboardPage;
+
     // Reset visibility when navigating to a new page
     useEffect(() => {
         setIsVisible(true);
@@ -16,6 +21,8 @@ export default function Header() {
     }, [pathname]);
 
     useEffect(() => {
+        if (hideHeader) return;
+
         const handleScroll = (e: Event) => {
             // Only respond to scroll events from a <main> element
             const target = e.target as HTMLElement;
@@ -38,7 +45,9 @@ export default function Header() {
         return () => {
             document.removeEventListener('scroll', handleScroll, { capture: true } as EventListenerOptions);
         };
-    }, []);
+    }, [hideHeader]);
+
+    if (hideHeader) return null;
 
     return (
         <header className={`pt-12 px-6 pb-2 flex justify-between items-start bg-background-light/80 backdrop-blur-md absolute top-0 left-0 right-0 z-20 transition-transform duration-300 ${
@@ -46,7 +55,7 @@ export default function Header() {
         }`}>
             <div className="flex flex-col cursor-pointer">
                 <div className="flex items-center gap-1.5">
-                    <span className="font-semibold text-[22px] tracking-tight text-[#161616]">San Francisco, CA</span>
+                    <span className="font-semibold text-[22px] tracking-tight text-[#161616]">Rajiv Chowk, Delhi</span>
                     <svg className="h-[22px] w-[22px] mt-1 text-[#161616]" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7"></path>
                     </svg>

@@ -18,7 +18,7 @@ export default function BottomNav() {
             </Link>
 
             <Link href="/events" className="flex items-center justify-center p-2 text-gray-500 hover:text-city-black transition-colors">
-                {pathname === "/events" ? (
+                {pathname.startsWith("/events") ? (
                     <div className="bg-city-neon p-3 rounded-2xl text-black flex items-center justify-center shadow-subtle -m-2">
                         <span className="material-symbols-outlined text-2xl filled-icon">calendar_today</span>
                     </div>
