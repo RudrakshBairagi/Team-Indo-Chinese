@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# City Vibes 🌆
 
-## Getting Started
+City Vibes is a modern web application designed to bridge the gap between organizations and young volunteers. Our mission is to foster community engagement by making volunteering rewarding and accessible.
 
-First, run the development server:
+## 🚀 The Vision
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Volunteering shouldn't just be about work; it should be about impact and community. City Vibes incentivizes participation by allowing volunteers to earn points for every event they contribute to. These points can then be redeemed for exclusive discounts, coupon codes, and merch from local partners.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Key Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Personalized Hero Stories**: Stay updated with the most impactful campaigns and trending events in the city.
+- **Categorized Volunteering**: Easily find opportunities in fields like Arts & Culture, NGOs, Sports, Film & Media, and more.
+- **Gamified Experience**: A real-time leaderboard tracks top volunteers, encouraging friendly competition through "City Rankings."
+- **Rewards Marketplace**: Seamlessly redeem earned points for coffee discounts, concert entries, and exclusive merch.
+- **Event Discovery**: A dedicated upcoming events section with detailed information and quick registration.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tech Stack
 
-## Learn More
+- **Framework**: [Next.js 15+](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Icons**: [Google Material Symbols](https://fonts.google.com/icons)
 
-To learn more about Next.js, take a look at the following resources:
+## 📸 Preview
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Home Page - Rankings & Events
+![Home Page](/Users/rudraksh/.gemini/antigravity/brain/bc337481-b1f5-4946-afeb-e13fdf53f36e/ranking_and_events_home_1773595604085.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Community Leaderboard
+![Leaderboard](/Users/rudraksh/.gemini/antigravity/brain/bc337481-b1f5-4946-afeb-e13fdf53f36e/leaderboard_podium_1773595673397.png)
 
-## Deploy on Vercel
+## 🏁 Getting Started
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Prerequisites
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Node.js 18.x or later
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/RudrakshBairagi/Team-Indo-Chinese.git
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 🤝 Contributing
+
+We welcome contributions! Whether it's a bug fix, a new feature, or design improvements, feel free to open a Pull Request.
+
+---
+Built with ❤️ for the community.
