@@ -173,33 +173,33 @@ export default function Home() {
                         <div className="absolute -top-6 -right-6 w-16 h-16 bg-city-neon/10 rounded-full"></div>
                         <div className="relative mb-3">
                             <div className="w-16 h-16 rounded-2xl bg-city-black overflow-hidden border-2 border-city-neon">
-                                <img alt="User" className="w-full h-full object-cover opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzvI0uxK6imWqBXSKikpuvDexsc_Ym2PcG-YkAGIhn4RT2WhbJ68mjrrfxP6vx9KckG6KyQsCdyD_v_4T09_kjDDtPsku8wzXadB-m-Z2-86mTK_cH4bWVFRU4i1eGX1CyJYBCnSUFBn_fMR8wDXJH7UOT_BS2SbWxI0ubeDvT9rtSFr83f9IDlcPFGlXy7ShLKIV_Ypvn_PEwJuOT8cZmNthsWGSAe7ybjULxjgQTFBHsMEfoSmBu05HjOfoTZJmuR2lUx1q40KM" />
+                                <img alt="Rudraksh Bairagi" className="w-full h-full object-cover" src="/ranking/Rudraksh_Bairagi.jpg" />
                             </div>
                             <div className="absolute -bottom-1 -right-1 bg-city-neon text-city-black font-black text-[10px] w-5 h-5 flex items-center justify-center rounded-lg shadow-sm">1</div>
                         </div>
-                        <h4 className="text-city-black font-bold text-sm truncate w-full">Marcus J.</h4>
+                        <h4 className="text-city-black font-bold text-sm truncate w-full">Rudraksh B.</h4>
                         <p className="text-city-purple font-black text-[11px] mt-1">12,450 PTS</p>
                     </div>
                     {/* Rank 2 Card */}
                     <div className="rank-card bg-white rounded-[2rem] p-4 shrink-0 shadow-card-soft border border-black/5 flex flex-col items-center text-center relative overflow-hidden">
                         <div className="relative mb-3">
                             <div className="w-16 h-16 rounded-2xl bg-gray-200 overflow-hidden border-2 border-white">
-                                <img alt="User" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvsrCVBYmGrl0mkm3LB2RpE57DmfCwHTH0MxQ7-9gga9rvIWif2nVO4XnKhQxDZgT1JCKnFJ4dMY1O0BkJKYOxcgc56l5BKKcpWRzHcC-jqCF06v-e5woiPD_a7ZyrtbRlh08pEn5OpG3k89FMDfE1hEAmWetbkj7hCLWxdwJr2fLFjSIzIL3itQW89p4Rkep30QyokhS0KzARvwb1-7bMTrYvvP2IPaVsf59K5jjcLSHrzlxzCmsO4ilG_YnNNrSJtKc4BZtV5hI" />
+                                <img alt="Charu Chourasia" className="w-full h-full object-cover" src="/ranking/Charu_Chourasia.jpg" />
                             </div>
                             <div className="absolute -bottom-1 -right-1 bg-gray-200 text-city-black font-black text-[10px] w-5 h-5 flex items-center justify-center rounded-lg shadow-sm">2</div>
                         </div>
-                        <h4 className="text-city-black font-bold text-sm truncate w-full">Elena Rose</h4>
+                        <h4 className="text-city-black font-bold text-sm truncate w-full">Charu C.</h4>
                         <p className="text-city-purple font-black text-[11px] mt-1">10,820 PTS</p>
                     </div>
                     {/* Rank 3 Card */}
                     <div className="rank-card bg-white rounded-[2rem] p-4 shrink-0 shadow-card-soft border border-black/5 flex flex-col items-center text-center relative overflow-hidden">
                         <div className="relative mb-3">
                             <div className="w-16 h-16 rounded-2xl bg-gray-200 overflow-hidden border-2 border-white">
-                                <img alt="User" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVKhyIrSu6XrPD7ppI_LBecI9AW4I0ToeyIqSc0h6p67EE1hdzwqz4xeBj8RVLNa2dc-fh07GdTiTzy7HMXO0kEg7AeXWKB5DBIHgNWQhJQ1oXE4itkAWjAq9Qrmcdo2kRoZog2uMIigvbxQqIPdSA1XnAjLXR3WU0C90sWsq2tPdMegxuhnjlrJLgA6xpAN9C6OkcKyyDy5ySkignqTTXVYAfzzZrFoyOEaaXH6oyAG2R3hrPraLqDiOBK_mSRIAbzAAENCcyuRA" />
+                                <img alt="Meemansa Soni" className="w-full h-full object-cover" src="/ranking/Meemansa_Soni.jpg" />
                             </div>
                             <div className="absolute -bottom-1 -right-1 bg-orange-100 text-city-black font-black text-[10px] w-5 h-5 flex items-center justify-center rounded-lg shadow-sm">3</div>
                         </div>
-                        <h4 className="text-city-black font-bold text-sm truncate w-full">Derrick W.</h4>
+                        <h4 className="text-city-black font-bold text-sm truncate w-full">Meemansa S.</h4>
                         <p className="text-city-purple font-black text-[11px] mt-1">9,400 PTS</p>
                     </div>
                 </div>
