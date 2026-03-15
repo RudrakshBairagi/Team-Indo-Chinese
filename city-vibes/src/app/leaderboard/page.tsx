@@ -79,11 +79,11 @@ export default function Leaderboard() {
                     {/* Rank 3 */}
                     <div className="flex flex-col items-center w-1/3">
                         <div className="relative mb-3">
-                            <div className="size-20 rounded-full border-4 border-accent-bronze/30 bg-accent-bronze/20 overflow-hidden shadow-card-soft" style={{ backgroundImage: "url('/ranking/Meemansa_Soni.jpg')", backgroundSize: "cover" }}></div>
+                            <div className="size-20 rounded-full border-4 border-accent-bronze/30 bg-accent-bronze/20 overflow-hidden shadow-card-soft" style={{ backgroundImage: "url('/ranking/Srajan_Tiwari.jpg')", backgroundSize: "cover" }}></div>
                             <div className="absolute -top-1 -right-1 bg-accent-bronze text-white size-7 rounded-full flex items-center justify-center font-black text-xs shadow-md border-2 border-white">3</div>
                         </div>
                         <div className="bg-white/80 backdrop-blur-sm w-full rounded-2xl p-3 text-center shadow-card-soft border border-black/5">
-                            <p className="text-xs font-bold truncate">Meemansa S.</p>
+                            <p className="text-xs font-bold truncate">Srajan T.</p>
                             <p className="text-[10px] text-city-purple font-extrabold mt-0.5">12,450 pts</p>
                         </div>
                     </div>

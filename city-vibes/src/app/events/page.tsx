@@ -73,7 +73,7 @@ export default function Events() {
                 {/* Event Card 3: Earth_3R Trash Drive Volunteering */}
                 <Link href="/events/hyrox-delhi" className="block bg-city-black rounded-[2.5rem] flex flex-col overflow-hidden shadow-card-soft border border-white/5 transition-transform active:scale-[0.98]">
                     <div className="h-56 relative bg-white overflow-hidden">
-                        <img src="/events/Earth_5R.jpeg" alt="Earth_3R Trash Drive Volunteering" className="absolute inset-0 w-full h-full object-cover" />
+                        <img src="/events/Earth_5R.webp" alt="Earth_3R Trash Drive Volunteering" className="absolute inset-0 w-full h-full object-cover" />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
                         <div className="absolute bottom-4 left-6">
                             <span className="bg-city-black text-city-neon text-[10px] font-black px-2 py-1 rounded-sm uppercase italic border border-city-neon/30">Environment</span>

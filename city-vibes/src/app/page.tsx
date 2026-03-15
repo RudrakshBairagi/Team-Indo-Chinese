@@ -195,11 +195,11 @@ export default function Home() {
                     <div className="rank-card bg-white rounded-[2rem] p-4 shrink-0 shadow-card-soft border border-black/5 flex flex-col items-center text-center relative overflow-hidden">
                         <div className="relative mb-3">
                             <div className="w-16 h-16 rounded-2xl bg-gray-200 overflow-hidden border-2 border-white">
-                                <img alt="Meemansa Soni" className="w-full h-full object-cover" src="/ranking/Meemansa_Soni.jpg" />
+                                <img alt="Srajan Tiwari" className="w-full h-full object-cover" src="/ranking/Srajan_Tiwari.jpg" />
                             </div>
                             <div className="absolute -bottom-1 -right-1 bg-orange-100 text-city-black font-black text-[10px] w-5 h-5 flex items-center justify-center rounded-lg shadow-sm">3</div>
                         </div>
-                        <h4 className="text-city-black font-bold text-sm truncate w-full">Meemansa S.</h4>
+                        <h4 className="text-city-black font-bold text-sm truncate w-full">Srajan T.</h4>
                         <p className="text-city-purple font-black text-[11px] mt-1">9,400 PTS</p>
                     </div>
                 </div>
@@ -270,9 +270,9 @@ export default function Home() {
                     <Link className="text-city-purple text-sm font-bold" href="/events">View all</Link>
                 </div>
                 {/* Horizontal Scrollable Container */}
-                <div className="hero-container flex gap-4 overflow-x-auto px-6 pt-10 pb-14 -mt-8 hide-scrollbar">
+                <div className="flex gap-4 overflow-x-auto px-6 pt-10 pb-14 -mt-8 hide-scrollbar snap-x snap-mandatory">
                     {/* Event Card 1: Goonj Senior Citizen Volunteering */}
-                    <div className="hero-story-card bg-white rounded-[2.5rem] flex flex-col relative overflow-hidden shrink-0 shadow-card-soft border border-black/5"
+                    <div className="event-tile bg-white rounded-[2.5rem] flex flex-col relative overflow-hidden shrink-0 shadow-card-soft border border-black/5 snap-start"
                         data-purpose="event-card">
                         {/* Top Half: Image */}
                         <div className="flex-1 bg-white relative overflow-hidden">
@@ -303,7 +303,7 @@ export default function Home() {
                         </div>
                     </div>
                     {/* Event Card 2: Hyrox Delhi Volunteering */}
-                    <div className="hero-story-card bg-white rounded-[2.5rem] flex flex-col relative overflow-hidden shrink-0 shadow-card-soft border border-black/5"
+                    <div className="event-tile bg-white rounded-[2.5rem] flex flex-col relative overflow-hidden shrink-0 shadow-card-soft border border-black/5 snap-start"
                         data-purpose="event-card">
                         {/* Top Half: Image */}
                         <div className="flex-1 bg-white relative overflow-hidden">
@@ -323,6 +323,37 @@ export default function Home() {
                                 <h3 className="text-white text-xl font-bold">Hyrox Delhi Volunteering</h3>
                                 <p className="text-gray-400 text-[11px] font-medium mt-1">Saturday, March 22nd • 8 AM</p>
                                 <p className="text-gray-400 text-[11px] font-medium mt-0.5">Location: India Gate Lawns, Delhi</p>
+                            </div>
+                            <div className="flex justify-between items-center">
+                                <button
+                                    className="bg-city-neon text-city-black text-[10px] font-black px-6 py-2.5 rounded-full hover:scale-95 transition-transform uppercase tracking-widest">REGISTER NOW</button>
+                                <div className="w-11 h-11 bg-white/10 rounded-2xl flex items-center justify-center">
+                                    <span className="material-symbols-outlined text-city-neon filled-icon text-xl">favorite</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* Event Card 3: Earth_3R Trash Drive Volunteering */}
+                    <div className="event-tile bg-white rounded-[2.5rem] flex flex-col relative overflow-hidden shrink-0 shadow-card-soft border border-black/5 snap-start"
+                        data-purpose="event-card">
+                        {/* Top Half: Image */}
+                        <div className="flex-1 bg-white relative overflow-hidden">
+                            <img src="/events/Earth_5R.webp" alt="Earth_3R Trash Drive Volunteering" className="absolute inset-0 w-full h-full object-cover" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+                            <div className="absolute bottom-4 left-6 bg-city-black text-city-neon font-black text-[10px] px-3 py-1.5 rounded-full uppercase tracking-widest z-30">
+                                ENVIRONMENT
+                            </div>
+                            {/* Points Badge */}
+                            <div className="absolute top-6 right-6 bg-city-purple/10 text-city-purple font-bold text-[11px] px-4 py-2 rounded-full border border-city-purple/5 z-30">
+                                +100 points
+                            </div>
+                        </div>
+                        {/* Bottom Half: Dark */}
+                        <div className="bg-city-black p-5 sm:p-6 flex flex-col justify-between relative z-20 shrink-0">
+                            <div>
+                                <h3 className="text-white text-xl font-bold">Earth_3R Trash Drive Volunteering</h3>
+                                <p className="text-gray-400 text-[11px] font-medium mt-1">Saturday, March 29th • 9 AM</p>
+                                <p className="text-gray-400 text-[11px] font-medium mt-0.5">Location: Lodhi Garden, Delhi</p>
                             </div>
                             <div className="flex justify-between items-center">
                                 <button
