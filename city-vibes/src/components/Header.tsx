@@ -50,7 +50,7 @@ export default function Header() {
     if (hideHeader) return null;
 
     return (
-        <header className={`pt-12 px-6 pb-2 flex justify-between items-start bg-background-light/80 backdrop-blur-md absolute top-0 left-0 right-0 z-20 transition-transform duration-300 ${
+        <header className={`pt-12 px-6 pb-2 flex justify-between items-start bg-background-light/80 backdrop-blur-md fixed top-0 left-0 right-0 z-[100] transition-transform duration-300 ${
             isVisible ? 'translate-y-0' : '-translate-y-full'
         }`}>
             <div className="flex flex-col cursor-pointer">

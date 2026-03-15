@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import SearchBar from '@/components/SearchBar';
 
 export default function Home() {
@@ -25,7 +26,7 @@ export default function Home() {
         return () => container.removeEventListener('scroll', handleScroll);
     }, []);
     return (
-        <main className="flex-1 overflow-y-auto w-full pb-32 pt-[88px]">
+        <main className="flex-1 overflow-y-auto w-full pb-32 pt-[88px] relative z-0">
             {/* Search Bar */}
             <SearchBar />
             {/* BEGIN: Stories Section */}
@@ -47,61 +48,49 @@ export default function Home() {
                 </div>
                 {/* Horizontal Scrollable Hero Area */}
                 <div ref={storyContainerRef} className="hero-container flex gap-4 overflow-x-auto px-6 pt-12 pb-14 -mt-10 hide-scrollbar snap-x snap-mandatory">
-                    {/* Hero Story 1: Art District */}
+                    {/* Hero Story 1: Clean Yamuna Campaign */}
                     <div
                         className="hero-story-card bg-city-black rounded-[2.5rem] flex flex-col relative overflow-hidden shrink-0 shadow-card-soft border border-white/5 snap-start">
                         <div
                             className="h-1/3 bg-city-black p-6 flex flex-col justify-center items-center text-center relative z-20">
-                            <span className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.2em] mb-3">Arts
-                                &amp; Culture</span>
-                            <h3 className="text-white text-2xl font-bold art-title">Art District<br />Walkthrough</h3>
+                            <span className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.2em] mb-3">NGOs
+                                &amp; Impact</span>
+                            <h3 className="text-white text-2xl font-bold art-title">Clean Yamuna<br />Campaign</h3>
                         </div>
                         <div className="flex-1 bg-white relative overflow-hidden">
-                            <div className="absolute inset-0 line-art-overlay opacity-60"></div>
-                            <div
-                                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 border-[1.5px] border-city-black rounded-full">
-                            </div>
-                            <div
-                                className="absolute top-[45%] left-[40%] w-16 h-16 bg-city-purple/80 rounded-full border border-city-black">
-                            </div>
-                            <div
-                                className="absolute bottom-[20%] right-[25%] w-12 h-12 bg-city-neon/80 rounded-full border border-city-black">
-                            </div>
-                            <div
-                                className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-city-purple flex items-center justify-center rotate-45 border-2 border-city-black z-30">
-                                <div className="w-full h-full bg-city-purple -rotate-45 flex items-center justify-center">
-                                    <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                        <path
-                                            d="M12 0l3.09 8.26h8.91l-7.21 5.24 2.76 8.5-7.55-5.48-7.55 5.48 2.76-8.5-7.21-5.24h8.91z">
-                                        </path>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div className="absolute bottom-6 left-0 right-0 text-center px-4">
-                                <p className="text-[11px] font-medium text-city-black uppercase tracking-wider">Mission
-                                    District Galleries</p>
+                            <Image 
+                                src="https://www.eawater.com/wp-content/uploads/2022/09/topic-11.jpg" 
+                                alt="Clean Yamuna Campaign" 
+                                fill
+                                sizes="(max-width: 768px) 100vw, 384px"
+                                className="object-cover"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                            <div className="absolute bottom-6 left-0 right-0 text-center px-4 relative z-10">
+                                <p className="text-[11px] font-medium text-white uppercase tracking-wider">Mission
+                                    Save Yamuna</p>
                             </div>
                         </div>
                     </div>
-                    {/* Hero Story 2: Rooftops */}
+                    {/* Hero Story 2: Seedhe Maut Concert */}
                     <div
                         className="hero-story-card bg-city-gray rounded-[2.5rem] flex flex-col relative overflow-hidden shrink-0 shadow-card-soft border border-gray-100 snap-start">
                         <div className="h-1/3 bg-white p-6 flex flex-col justify-center items-center text-center relative z-20">
                             <span className="text-[10px] font-bold text-city-purple uppercase tracking-[0.2em] mb-3">Trending Now</span>
-                            <h3 className="text-city-black text-2xl font-bold art-title">Best Rooftops<br />In The City
+                            <h3 className="text-city-black text-2xl font-bold art-title">Seedhe Maut<br />Concert
                             </h3>
                         </div>
                         <div className="flex-1 bg-city-neon relative overflow-hidden">
-                            <div className="absolute inset-0 line-art-overlay mix-blend-multiply opacity-20"></div>
-                            <div
-                                className="absolute top-10 left-10 w-40 h-40 border-4 border-city-black/10 rounded-[2rem] rotate-12">
-                            </div>
-                            <div
-                                className="absolute -bottom-8 -right-8 w-32 h-32 bg-white rounded-full border-4 border-city-black">
-                            </div>
-                            <div className="absolute bottom-6 left-0 right-0 text-center px-4">
-                                <p className="text-[11px] font-bold text-city-black uppercase tracking-wider">12 Hidden
-                                    Gem Locations</p>
+                            <Image 
+                                src="https://www.ticketfairy.com/uploaded/public/6191295b28b7f3.49742033.jpg" 
+                                alt="Seedhe Maut Concert" 
+                                fill
+                                sizes="(max-width: 768px) 100vw, 384px"
+                                className="object-cover"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                            <div className="absolute bottom-6 left-0 right-0 text-center px-4 relative z-10">
+                                <p className="text-[11px] font-bold text-white uppercase tracking-wider">Gems of India</p>
                             </div>
                         </div>
                     </div>
