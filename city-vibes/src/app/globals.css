@@ -45,7 +45,8 @@ body {
 
 .hero-story-card {
   min-width: 85%;
-  aspect-ratio: 0.9/1;
+  aspect-ratio: 0.8 / 1;
+  min-height: 380px;
   scroll-snap-align: center;
 }
 

@@ -303,7 +303,7 @@ export default function Home() {
                             </div>
                         </div>
                         {/* Bottom Half: Dark */}
-                        <div className="h-2/5 bg-city-black p-6 flex flex-col justify-between relative z-20">
+                        <div className="bg-city-black p-5 sm:p-6 flex flex-col justify-between relative z-20 shrink-0">
                             <div>
                                 <h3 className="text-white text-xl font-bold">Summer Rave 2024</h3>
                                 <p className="text-gray-400 text-[11px] font-medium mt-1">Saturday, July 15th • 10 PM</p>
@@ -336,7 +336,7 @@ export default function Home() {
                             </div>
                         </div>
                         {/* Bottom Half: Dark */}
-                        <div className="h-2/5 bg-city-black p-6 flex flex-col justify-between relative z-20">
+                        <div className="bg-city-black p-5 sm:p-6 flex flex-col justify-between relative z-20 shrink-0">
                             <div>
                                 <h3 className="text-white text-xl font-bold">Modernist Exhibition</h3>
                                 <p className="text-gray-400 text-[11px] font-medium mt-1">Starts Aug 12th • 10 AM</p>
