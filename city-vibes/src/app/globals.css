@@ -51,8 +51,9 @@ body {
 }
 
 .event-tile {
-  min-width: 300px;
-  aspect-ratio: 0.8 / 1;
+  width: 85%;
+  min-width: 85%;
+  height: 420px;
   scroll-snap-align: start;
 }
 
