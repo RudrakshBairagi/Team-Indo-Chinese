@@ -10,8 +10,9 @@ export default function ProfilePage() {
                         <div
                             className="w-32 h-32 rounded-full border-4 border-white shadow-card-soft overflow-hidden bg-gray-200"
                             style={{
-                                backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuBpSkIMgWK8scLl9MKQifvsLMkAKtf_NB-9StGjd4ZU_Fh7mPl_0oAHxtOPk64eWROdgUXxqiVgIfd2d8XT_RC8ls7Q2hXPEIv2tJ6vNVgrODgXKyOuIin4JF2PbTnX9mx9GiItd_Ax0QF91lNm-8VHh2AiipoEKAxJ9r6ZQuOFhMuaF8ha-YtBneFdeQh_6xw3I-33wXVZtJld8zypJqMAeswLeiQjiNUIlhYCa9Rp3kGunJPZcs4LgJQavYAWIbyS5Eo00QKkN2w')`,
+                                backgroundImage: `url('/ranking/Shaolin_Prajapati.jpg')`,
                                 backgroundSize: 'cover',
+                                backgroundPosition: 'center',
                             }}
                         />
                         <div className="absolute bottom-1 right-1 bg-city-purple text-white p-1.5 rounded-full shadow-lg border-2 border-white">
@@ -19,8 +20,8 @@ export default function ProfilePage() {
                         </div>
                     </div>
                     <div>
-                        <h2 className="text-2xl font-bold text-city-black">Marcus Vane</h2>
-                        <p className="text-city-purple text-sm font-medium">marcus.vane@email.com</p>
+                        <h2 className="text-2xl font-bold text-city-black">Shaolin Prajapati</h2>
+                        <p className="text-city-purple text-sm font-medium">shaolin.prajapati@email.com</p>
                     </div>
                     <button className="w-full max-w-xs bg-city-black text-white font-bold py-3.5 px-6 rounded-2xl shadow-card-soft transition-all active:scale-95">
                         Edit Profile
@@ -31,11 +32,11 @@ export default function ProfilePage() {
             {/* Stats Grid */}
             <div className="px-6 grid grid-cols-3 gap-4 mb-8">
                 <div className="bg-white/40 border border-black/5 p-4 rounded-[2rem] shadow-card-soft flex flex-col items-center justify-center gap-1">
-                    <p className="text-city-purple text-2xl font-black">500</p>
+                    <p className="text-city-purple text-2xl font-black">10,250</p>
                     <p className="text-[10px] uppercase font-bold text-gray-500 tracking-tighter">Points</p>
                 </div>
                 <div className="bg-white/40 border border-black/5 p-4 rounded-[2rem] shadow-card-soft flex flex-col items-center justify-center gap-1">
-                    <p className="text-city-purple text-2xl font-black">12</p>
+                    <p className="text-city-purple text-2xl font-black">18</p>
                     <p className="text-[10px] uppercase font-bold text-gray-500 tracking-tighter text-center">Events</p>
                 </div>
                 <div className="bg-white/40 border border-black/5 p-4 rounded-[2rem] shadow-card-soft flex flex-col items-center justify-center gap-1">

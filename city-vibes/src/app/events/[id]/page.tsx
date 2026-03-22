@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 export default function EventDetailsPage() {
     const router = useRouter();
     const [activeImage, setActiveImage] = useState(0);
+    const [registered, setRegistered] = useState(false);
     const carouselRef = useRef<HTMLDivElement>(null);
     const totalImages = 3;
 
@@ -46,17 +47,17 @@ export default function EventDetailsPage() {
                         {/* Image 1 */}
                         <div className="w-full h-full shrink-0 snap-center relative">
                             <div className="absolute inset-0 bg-gray-200 animate-pulse -z-10"></div>
-                            <img alt="Event image 1" className="w-full h-full object-cover relative z-10" loading="eager" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoqiPDrJnH_63C4zQEnTArHxWf4JdlCWHG-4O5tE6GBFqT8dGWXB9unN7mPCIQ3KyJ-VdMAZwz9s7fW4v6IIFumd8i4vXJ5_l3gZOhhCm3aD19ckeuN2l-oum797haloo3bOPciRSSnGgMr-Z6cywbTu0Gy32saoUoF4aUmuIVn-zlPocYFH_HyrNuNWvnmUzUaCtT1YiDx-ZPdauxb2EjIMz5hZyMGr4CrDQxMKGG6c_LI_-cljP9xFEFfIUxa_jBNq09ziswYoA" />
+                            <img alt="Hyrox Delhi event" className="w-full h-full object-cover relative z-10" loading="eager" src="/events/Hyrox_Delhi.jpeg" />
                         </div>
                         {/* Image 2 */}
                         <div className="w-full h-full shrink-0 snap-center relative">
                             <div className="absolute inset-0 bg-gray-200 animate-pulse -z-10"></div>
-                            <img alt="Event image 2" className="w-full h-full object-cover relative z-10" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBt8eGW_9541JUXpLUw3ffED75NGZI5AswVO4iR9BZgVN4WCpNM0HE6IzT918_zXu85YryJ5XoGrsRlcLdtDnbUM4xTy6OuXRdMlrDlGKoKJtiS7NMI_IWFuSaqgpFWaxwoK__W4HVK7uCIzBUR1nNY15T0V16uyMhYDXYRgGAj3Wvyegrs_6skCubqdOdZVD0guLZ670GOlsgvNItQbZ7diMRjxAgMiUoe8BIQppIIuLWY0RXuu7h1JJ2oJifiHfMhLVJ74yT5vwo" />
+                            <img alt="Hyrox Delhi athletes running" className="w-full h-full object-cover relative z-10" loading="lazy" src="/events/hyrox_delhi_2.png" />
                         </div>
                         {/* Image 3 */}
                         <div className="w-full h-full shrink-0 snap-center relative">
                             <div className="absolute inset-0 bg-gray-200 animate-pulse -z-10"></div>
-                            <img alt="Event image 3" className="w-full h-full object-cover relative z-10" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZfVNaZIBiErZ7PXbbCcs5X51F10A3LHHE3sYSM5316lUOhP9LrFUyEsXJl8P7tEGjZlbkZPedwgd7-RuhOP1cfd54hk63zFeh8I9UFt0oixi1lazulvdS_7-GLiPky0aYn4w3Xr7-KSBeV0ghNv3bRM7YZt9AAsL9zBCv1YSWbACSLuTHx8roGjb8XS2rnApp4pfAReLmTWQDMOTZscg37nfo6U9X4f_aEiScepT34itF_HnBYZ2RnkWRLEcPg6a6voumOdWhq1o" />
+                            <img alt="Hyrox Delhi sled push station" className="w-full h-full object-cover relative z-10" loading="lazy" src="/events/hyrox_delhi_3.png" />
                         </div>
                     </div>
                     {/* Overlay Gradients & UI */}
@@ -147,8 +148,11 @@ export default function EventDetailsPage() {
             {/* Fixed Bottom Actions */}
             <div className="fixed bottom-28 left-0 right-0 px-6 z-40 max-w-md mx-auto">
                 <div className="flex gap-4">
-                    <button className="flex-1 bg-city-neon text-city-black font-black text-[10px] py-5 rounded-[2rem] shadow-lg uppercase tracking-widest active:scale-95 transition-all">
-                        Register Now
+                    <button 
+                        onClick={() => setRegistered(true)}
+                        className={`flex-1 font-black text-[10px] py-5 rounded-[2rem] shadow-lg uppercase tracking-widest active:scale-95 transition-all ${registered ? 'bg-emerald-500 text-white' : 'bg-city-neon text-city-black'}`}
+                    >
+                        {registered ? '✓ Successfully Registered' : 'Register Now'}
                     </button>
                     <button className="size-16 flex items-center justify-center rounded-[2rem] bg-white shadow-card-soft border border-black/5 text-city-purple active:scale-95 transition-all">
                         <span className="material-symbols-outlined text-2xl filled-icon">favorite</span>

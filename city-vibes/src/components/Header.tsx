@@ -67,11 +67,9 @@ export default function Header() {
                     <span className="material-symbols-outlined text-[32px] filled-icon text-[#161616]">notifications</span>
                 </button>
                 <Link href="/profile" className="flex flex-col items-center gap-1">
-                    <span aria-label="Profile" className="p-0">
-                        <span className="material-symbols-outlined text-[32px] text-[#161616]" style={{ fontVariationSettings: "'wght' 300" }}>person</span>
-                    </span>
+                    <img aria-label="Profile" className="size-9 rounded-full object-cover border-2 border-city-purple/30" alt="Shaolin's profile" src="/ranking/Shaolin_Prajapati.jpg" />
                     <span className="bg-[#F6ECFF] text-[#B85DF8] text-[11px] font-bold px-3 py-0.5 rounded-full border border-[#E9D5FF] tracking-wide">
-                        500 pts
+                        10,250 pts
                     </span>
                 </Link>
             </div>
