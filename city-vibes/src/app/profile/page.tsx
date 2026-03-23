@@ -75,6 +75,19 @@ export default function ProfilePage() {
 
                 <Link
                     className="flex items-center justify-between p-4 bg-white/40 rounded-[2rem] shadow-card-soft border border-black/5 hover:bg-white/60 transition-colors"
+                    href="/certificates"
+                >
+                    <div className="flex items-center gap-4">
+                        <div className="w-12 h-12 rounded-2xl bg-yellow-100/30 flex items-center justify-center border border-black/5">
+                            <span className="material-symbols-outlined text-city-black filled-icon">workspace_premium</span>
+                        </div>
+                        <span className="font-bold text-city-black">Certificates</span>
+                    </div>
+                    <span className="material-symbols-outlined text-gray-400">chevron_right</span>
+                </Link>
+
+                <Link
+                    className="flex items-center justify-between p-4 bg-white/40 rounded-[2rem] shadow-card-soft border border-black/5 hover:bg-white/60 transition-colors"
                     href="#"
                 >
                     <div className="flex items-center gap-4">
